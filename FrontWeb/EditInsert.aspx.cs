@@ -17,6 +17,7 @@ namespace FrontWeb
             if (!IsPostBack)
             {
                 lblTitulo.Text = "Crear exámen";
+                btnEjecutar.Text = "Guardar";
                 int id = -1;
                 if (string.IsNullOrWhiteSpace(Request.QueryString["tipo"]))
                 {
@@ -39,6 +40,7 @@ namespace FrontWeb
                 {
                     txtID.Enabled = false;
                     lblTitulo.Text = "Editar exámen";
+                    btnEjecutar.Text = "Actualizar";
                     var registros = await ConsultarRegistrosAsync();
                     bool encontrado = false;
                     foreach (var registro in registros)

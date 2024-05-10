@@ -28,6 +28,7 @@
         <div class="col-md-3">
             <br />
             <asp:Button ID="btnEjecutar" runat="server" OnClick="btnEjecutar_Click" Text="Ejecutar" CssClass="btn btn-secondary" />
+            &nbsp;&nbsp;
             <a href="Default.aspx">Regresar</a>
         </div>    
     </div>

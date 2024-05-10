@@ -39,11 +39,11 @@
                             <asp:Button ID="btnEditRecord"
                                 OnCommand="btnEditRecord_Command"
                                 CommandArgument='<%# Eval("ID").ToString() %>'
-                                CommandName="Edit" runat="server" Text="Editar" />
+                                CommandName="Edit" runat="server" Text="Editar" CssClass="btn btn-secondary" />
                             <asp:Button ID="btnDeleteRecord"
                                 OnCommand="btnDeleteRecord_Command"
                                 CommandArgument='<%# Eval("ID").ToString() %>'
-                                CommandName="Delete" runat="server" Text="Delete" />
+                                CommandName="Delete" runat="server" Text="Delete"  CssClass="btn btn-secondary" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
